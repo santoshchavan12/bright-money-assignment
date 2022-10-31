@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+.nav-bar {
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+.input-div {
+  margin: 10px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  margin: 10px;
+  width: 200px;
+}
+.button-div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar--left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+.nav-bar .title{
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imp--buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-button {
+  margin: 10px;
+  border: 2px solid;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.left-button:hover {
+  background-color: greenyellow;
+  color: black;
+}
+.input-box {
+  border-radius: 5px;
+  border: 2px solid;
+  height: 30px;
+  transition:0.3s;
+}
+.input-box:hover{
+  height:35px;
+  width:300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-form{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+}
+.buttons {
+  border: 2px solid;
+  border-radius: 4px;
+  width: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons{
+  height:30px;
+  width:auto;
+  background-color: skyblue;
+  transition: 0.5s;
+}
+.buttons:hover {
+  height:40px;
+  background-color: rgb(122, 204, 16);
+  color:white;
+  border: 2px solid black;
+  font-size: 20px;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
